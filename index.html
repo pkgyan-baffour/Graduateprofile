@@ -257,13 +257,23 @@
 
 
 <div class="icon-bar">
-  <a href="https://codepen.io/pkgyan-baffour/" class="codepen"><i class="fa fa-codepen"></i></a> 
+  <a href="https://codepen.io/pkgyan-baffour/" data-toggle="tooltip" title="Codepen" class="codepen"><i class="fa fa-codepen"></i></a> 
 
-  <a href="https://www.linkedin.com/in/kevin-gyan-baffour/" class="linkedin"><i class="fa fa-linkedin"></i></a>
-  <a href="https://github.com/pkgyan-baffour?tab=repositories" class="github"><i class="fa fa-github"></i></a> 
-   <a href="https://vimeo.com/kevingyanbaffour" class="vimeo"><i class="fa fa-vimeo"></i></a> 
+  <!--<div class="container">
+  <h3>Tooltip Example</h3>
+  <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+</div>-->
 
-   <a href="https://docs.google.com/document/d/1AWxpuTDmrTNmevjG4RFTe9gToEXtJsC0HQRz5-MJ89o/edit?usp=sharing" class="download"><i class="fa fa-download"></i></a>
+
+
+  <a href="https://www.linkedin.com/in/kevin-gyan-baffour/" data-toggle="tooltip" title="Linkedin" class="linkedin"><i class="fa fa-linkedin"></i></a>
+
+
+  <a href="https://github.com/pkgyan-baffour?tab=repositories" " data-toggle="tooltip" title="Github" class="github"><i class="fa fa-github"></i></a> 
+
+   <a href="https://vimeo.com/kevingyanbaffour" data-toggle="tooltip" title="Vimeo" class="vimeo"><i class="fa fa-vimeo"></i></a> 
+
+   <a href="https://docs.google.com/document/d/1AWxpuTDmrTNmevjG4RFTe9gToEXtJsC0HQRz5-MJ89o/edit?usp=sharing" data-toggle="tooltip" title="Resume" class="download"><i class="fa fa-file"></i></a>
 </div>
 
 <div class="content">
@@ -283,6 +293,12 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
 
   </body>
 
